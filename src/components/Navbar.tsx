@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 flex items-center justify-between h-16">
         <a href="#" className="font-display font-bold text-lg tracking-tight text-foreground">
-          alex<span className="text-primary">.</span>rivera
+          Bassem<span className="text-primary">.</span>Jebali
         </a>
 
         {/* Desktop */}

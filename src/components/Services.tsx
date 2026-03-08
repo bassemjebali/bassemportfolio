@@ -5,7 +5,7 @@ const services = [
   {
     icon: Palette,
     title: "Web Design",
-    description: "Custom designs that reflect your brand and convert visitors into customers. No templates.",
+    description: "Custom designs that reflect your brand and convert visitors into customers.",
   },
   {
     icon: Code,

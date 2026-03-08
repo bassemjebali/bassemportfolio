@@ -25,47 +25,70 @@ const Hero = () => {
           </span>
         </motion.div>
 
-        <motion.h1
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
-          initial={{ opacity: 0, y: 40 }}
+        <motion.div
+          className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-12"
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          I build websites
-          <br />
-          that <span className="text-gradient">grow</span> your
-          <br />
-          business.
-        </motion.h1>
+          <div className="flex-1 text-center lg:text-left">
+            <motion.h1
+              className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-8"
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+            >
+              I build websites
+              <br />
+              that <span className="text-gradient">grow</span> your
+              <br />
+              business.
+            </motion.h1>
 
-        <motion.p
-          className="text-lg md:text-xl text-muted-foreground max-w-xl mb-12 leading-relaxed"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          Freelance web developer helping local and online businesses convert more visitors into paying customers through modern, fast, and beautiful websites.
-        </motion.p>
+            <motion.p
+              className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-12 leading-relaxed"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              Freelance web developer helping local and online businesses convert more visitors into paying customers through modern, fast, and beautiful websites.
+            </motion.p>
 
-        <motion.div
-          className="flex flex-col sm:flex-row gap-4"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.45 }}
-        >
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-base hover:brightness-110 transition-all duration-300 group"
+            <motion.div
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.45 }}
+            >
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-base hover:brightness-110 transition-all duration-300 group"
+              >
+                Let's Talk
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-display font-semibold text-base hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
+              >
+                View My Work
+              </a>
+            </motion.div>
+          </div>
+
+          <motion.div
+            className="relative w-[260px] h-[260px] md:w-[340px] md:h-[340px] lg:w-[420px] lg:h-[420px] rounded-3xl overflow-hidden border border-border/40 shadow-xl shadow-primary/20"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
           >
-            Let's Talk
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-          <a
-            href="#projects"
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border border-border text-foreground font-display font-semibold text-base hover:border-primary/50 hover:bg-primary/5 transition-all duration-300"
-          >
-            View My Work
-          </a>
+            <img
+              src="/profile.jpg"
+              alt="Bassem Jebali"
+              className="w-full h-full object-cover scale-110"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+          </motion.div>
         </motion.div>
 
         {/* Stats */}
@@ -76,9 +99,9 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           {[
-            { value: "50+", label: "Projects Delivered" },
+            { value: "10+", label: "Projects Delivered" },
             { value: "4.9★", label: "Client Rating" },
-            { value: "3yrs", label: "Experience" },
+            { value: "8 months", label: "Experience" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-2xl md:text-3xl font-display font-bold text-foreground">{stat.value}</div>

@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Sarah Mitchell",
     role: "Owner, Bloom & Co.",
-    quote: "Alex completely transformed our online presence. Our orders tripled within the first month of launch. Best investment we've made.",
+    quote: "bassem jebali completely transformed our online presence. Our orders tripled within the first month of launch. Best investment we've made.",
   },
   {
     name: "James Carter",
@@ -15,7 +15,7 @@ const testimonials = [
   {
     name: "Maria Santos",
     role: "Partner, Mesa Legal Group",
-    quote: "We went from zero online leads to over 60 per month. Alex understands what businesses actually need.",
+    quote: "We went from zero online leads to over 60 per month. bassem jebali understands what businesses actually need.",
   },
 ];
 
